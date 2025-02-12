@@ -6,7 +6,6 @@
 
 
 body {
-  background-color: blue;
   margin: 0;
 }
 
@@ -18,6 +17,7 @@ header {
   align-items: center;
   color: white;
   height: 55px;
+  margin-bottom: 30px;
 }
 
 header > img {
@@ -26,9 +26,10 @@ header > img {
 }
 
 header > h1 {
+  /* font-family: Inter; */
   font-size: 0.9rem;
-  font-weight: 500;
-  font-family: Inter;
+  font-weight: 700;
+
 }
 
 article.journal-entry {
@@ -53,4 +54,38 @@ article.journal-entry .main-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container a {
+  color: #2B283A;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918E9B;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
